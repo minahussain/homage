@@ -1,6 +1,16 @@
+# Homage - Black Style Archive
+
+## 👑  Description 
+
+A Next.js + React app to archive Black style in entertainment spaces and processes them using AI to categorize and describe styles.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## ✏️ Todo 
+
+* Cleanup comments
+
+## ⌛ Run
 
 First, run the development server:
 
@@ -14,18 +24,20 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Initially, this used primsa for database, to run the database server:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npx prisma studio
+# format schema
+npx prisma format
+# synchronize schema
+npx prisma db push
+```
 
-## Learn More
+But now it pulls content from Prismic.io, a headless CMS.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
 ## Deploy on Vercel
 
