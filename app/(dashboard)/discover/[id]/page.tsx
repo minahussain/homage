@@ -23,6 +23,7 @@ const EntryPage = async ({ params }) => {
 
     const entry = await client.getByUID('entry', params.id)
     const data = entry.data
+    console.log(data)
     const { name, location, type, year, source, sourceHref } = data
 
     const sourceLink = (
@@ -34,7 +35,7 @@ const EntryPage = async ({ params }) => {
     let analysis = data?.analysis
     if (!analysis) {
         analysis = await analyze(
-            `${data?.name}, ${data?.location}, ${data?.type}, ${data?.imgAltText}, ${data?.year}`,
+            `${data?.name}, ${data?.location}, ${data?.type}, ${data?.imagealttext}, ${data?.year}`,
         )
         // await prisma.analysis.create({
         //     data: {
@@ -86,7 +87,7 @@ const EntryPage = async ({ params }) => {
                             >
                                 <span className="font-extrabold">Color</span>
                                 <span
-                                    className="px-8 py-2"
+                                    className="px-8 py-2 rounded-md"
                                     style={{ backgroundColor: color }}
                                 >
                                     {color}
