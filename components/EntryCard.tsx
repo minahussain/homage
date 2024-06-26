@@ -6,7 +6,6 @@ import Link from 'next/link'
 const EntryCard = ({ entry }) => {
     const date = new Date(entry.data.createdAt).toDateString()
     const { name, location, type, source, sourceHref, year } = entry.data
-    console.log(entry.data)
     const sourceLink = (
         <PrismicLink field={sourceHref} className="underline">
             {source}
@@ -14,11 +13,8 @@ const EntryCard = ({ entry }) => {
     )
 
     return (
-        <div
-            className="p-2 flex flex-col gap-2
-         overflow-hidden"
-        >
-            <div className="w-[500px] h-full relative aspect-[500/500]">
+        <div className="p-2 flex flex-col gap-2">
+            <div className="w-[500px] h-full relative aspect-[500/500] overflow-hidden rounded-lg">
                 {/* <Image
                     src={entry.imgHref}
                     alt={'aaliyah in blue jacket'}
@@ -27,7 +23,7 @@ const EntryCard = ({ entry }) => {
                 /> */}
                 <PrismicNextImage
                     className={
-                        'object-top object-cover aspect-[500/500] rounded-lg shadow-orange-900'
+                        'object-top object-cover aspect-[500/500] shadow-orange-900'
                     }
                     field={entry.data.image}
                 />

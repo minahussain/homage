@@ -2,7 +2,6 @@ import { PrismicNextImage } from '@prismicio/next'
 import Image from 'next/image'
 
 const EntryTile = ({ entry }) => {
-    console.log(entry)
     const date = new Date(entry.createdAt).toDateString()
     return (
         <div className="overflow-hidden relative aspect-[250/250] bg-primary-400 shadow">
