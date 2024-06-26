@@ -1,14 +1,16 @@
 # Homage - Black Style Archive
 
-## 👑  Description 
+## 👑 Description
+
+![Screenshot of App](/assets/app-entry-page.PNG)
 
 A Next.js + React app to archive Black style in entertainment spaces and processes them using AI to categorize and describe styles.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## ✏️ Todo 
+## ✏️ Todo
 
-* Cleanup comments
+-   Cleanup comments
 
 ## ⌛ Run
 
