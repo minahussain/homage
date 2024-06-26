@@ -2,7 +2,7 @@
 
 ## 👑 Description
 
-![Screenshot of App](/assets/app-entry-page.PNG)
+![Screenshot of App](/assets/app-entry-page.png)
 
 A Next.js + React app to archive Black style in entertainment spaces and processes them using AI to categorize and describe styles.
 
