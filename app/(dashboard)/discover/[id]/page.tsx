@@ -86,10 +86,13 @@ const EntryPage = async ({ params }) => {
                                 className="px-2 py-4 flex flex-items items-center justify-between"
                             >
                                 <span className="font-extrabold">Color</span>
-                                <span
-                                    className="px-8 py-2 rounded-md"
-                                    style={{ backgroundColor: color }}
-                                >
+                                <span className="font-extralight text-xs flex flex-col gap-1 justify-center">
+                                    <span
+                                        className="px-2 py-2 rounded-md"
+                                        style={{ backgroundColor: color }}
+                                    >
+                                        {' '}
+                                    </span>
                                     {color}
                                 </span>
                             </li>
