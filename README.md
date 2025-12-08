@@ -58,5 +58,3 @@ First, use `StructuredOutputParser` and zod to create a schema of instructions t
 ## Background
 
 There are a number of Black creatives who have taken the initiative to document Black fashion - many using social media to catalog and spread awareness of Black culture and it’s impact on society from past to present day: archivealive by Tianni Janae', Black Fashion Fair by Antoine Gregory, and Black Fashion Archive by Rikki Byrd. However the social media accounts aren't optimal to search through, leaving users scrolling through the accounts for inspiration.
-
-Read more about the [UI/UX process](https://www.attnhussain.com/project/black-style-archive---search).
